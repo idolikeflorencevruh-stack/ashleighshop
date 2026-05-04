@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashleigh Flowers & Vape Shop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+  <h1>Ashleigh Shop 💕</h1>
+  <button class="cart-btn" onclick="viewCart()">🛒</button>
+</header>
+
+<!-- MENU -->
+<div id="sideMenu" class="side-menu">
+  <p onclick="toggleAdmin()">Admin Panel</p>
+  <p onclick="scrollToSection('visit')">Visit Us</p>
+  <p onclick="scrollToSection('contact')">Contact</p>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <h2 class="big-title">WELCOME 💖</h2>
+  <p class="quote">“Fresh flowers, beautiful bouquets & premium vapes — all in one place.”</p>
+</section>
+
+<!-- SHOP -->
+<section class="scroll-shop">
+
+  <!-- VAPES -->
+  <h3>Vapes</h3>
+  <div class="scroll-row">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/150" />
+      <h4>Vape 1</h4>
+      <p class="price">₱350</p>
+      <button onclick="addToCart('Vape 1 - ₱350')">Add to Cart</button>
+      <button onclick="buyNow('Vape 1')">Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/150" />
+      <h4>Vape 2</h4>
+      <p class="price">₱400</p>
+      <button onclick="addToCart('Vape 2 - ₱400')">Add to Cart</button>
+      <button onclick="buyNow('Vape 2')">Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/150" />
+      <h4>Vape 3</h4>
+      <p class="price">₱450</p>
+      <button onclick="addToCart('Vape 3 - ₱450')">Add to Cart</button>
+      <button onclick="buyNow('Vape 3')">Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/150" />
+      <h4>Vape 4</h4>
+      <p class="price">₱500</p>
+      <button onclick="addToCart('Vape 4 - ₱500')">Add to Cart</button>
+      <button onclick="buyNow('Vape 4')">Buy Now</button>
+    </div>
+
+  </div>
+
+  <!-- FLOWERS -->
+  <h3>Flowers</h3>
+  <div class="scroll-row">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/150" />
+      <h4>Rose</h4>
+      <p class="price">₱200</p>
+      <button onclick="addToCart('Rose - ₱200')">Add to Cart</button>
+      <button onclick="buyNow('Rose')">Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/150" />
+      <h4>Sunflower</h4>
+      <p class="price">₱180</p>
+      <button onclick="addToCart('Sunflower - ₱180')">Add to Cart</button>
+      <button onclick="buyNow('Sunflower')">Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/150" />
+      <h4>Tulips</h4>
+      <p class="price">₱250</p>
+      <button onclick="addToCart('Tulips - ₱250')">Add to Cart</button>
+      <button onclick="buyNow('Tulips')">Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/150" />
+      <h4>Lily</h4>
+      <p class="price">₱300</p>
+      <button onclick="addToCart('Lily - ₱300')">Add to Cart</button>
+      <button onclick="buyNow('Lily')">Buy Now</button>
+    </div>
+
+  </div>
+
+  <!-- BOUQUETS -->
+  <h3>Bouquets</h3>
+  <div class="scroll-row">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/150" />
+      <h4>Love Bouquet</h4>
+      <p class="price">₱600</p>
+      <button onclick="addToCart('Love Bouquet - ₱600')">Add to Cart</button>
+      <button onclick="buyNow('Love Bouquet')">Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/150" />
+      <h4>Birthday Bouquet</h4>
+      <p class="price">₱650</p>
+      <button onclick="addToCart('Birthday Bouquet - ₱650')">Add to Cart</button>
+      <button onclick="buyNow('Birthday Bouquet')">Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/150" />
+      <h4>Premium Bouquet</h4>
+      <p class="price">₱800</p>
+      <button onclick="addToCart('Premium Bouquet - ₱800')">Add to Cart</button>
+      <button onclick="buyNow('Premium Bouquet')">Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/150" />
+      <h4>Custom Bouquet</h4>
+      <p class="price">₱900</p>
+      <button onclick="addToCart('Custom Bouquet - ₱900')">Add to Cart</button>
+      <button onclick="buyNow('Custom Bouquet')">Buy Now</button>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Contact Us 📞</h2>
+  <p>0924 370 7903</p>
+  <p>Open: 9AM – 10PM</p>
+</section>
+
+<!-- VISIT -->
+<section id="visit" class="visit">
+  <h2>Visit Us 📍</h2>
+  <p>Moalboal, Cebu</p>
+</section>
+
+<footer>
+  <p>Visit us today 💕</p>
+</footer>
+
+<!-- ADMIN -->
+<div id="adminPanel" class="admin">
+  <h3>Admin Panel</h3>
+  <button onclick="toggleAdmin()">Close</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
